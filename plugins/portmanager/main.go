@@ -56,8 +56,8 @@ func check(e error) {
     }
 }
 
-var portMin int = getEnvInt("PLUGIN_PORT_MIN", 30000)
-var portMax int = getEnvInt("PLUGIN_PORT_MAX", 30900)
+var portMin int = getEnvInt("PLUGIN_PORT_MIN", 1000)
+var portMax int = getEnvInt("PLUGIN_PORT_MAX", 65535)
 
 func savePortMapping() {
 
