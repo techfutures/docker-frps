@@ -39,7 +39,7 @@ log_max_days = {{getenv "FRPS_LOG_DAYS" "5"}}
 {{end}}
 
 token = {{getenv "FRPS_AUTH_TOKEN" "abcdefghi"}}
-allow_ports = 1000-65535
+allow_ports = 1025-65000
 
 # pool_count in each proxy will change to max_pool_count if they exceed the maximum value
 max_pool_count = 5
